@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">FormUI</string>
+    <string name="hello">Hello Guys</string>
+
+    <string name="header_th">ใบสมัครงาน</string>
+    <string name="header_en">APPLICATION FOR EMPLOYMENT</string>
+    <string name="paper_info">โปรดกรอกข้อมูลลงในใบสมัครให้ครบถ้วน - Please completely fill out this form</string>
+
+    <string name="date">วันที่ Date</string>
+    <string name="pic_th">รูปถ่าย</string>
+    <string name="upload_th">อัพโหลดไฟล์ไอคอน</string>
+
 </resources>
