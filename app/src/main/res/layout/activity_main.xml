@@ -9,117 +9,118 @@
     tools:context=".MainActivity"
     android:padding="15dp">
 
-    <!-- Header -->
-    <LinearLayout
-        android:id="@+id/container_header"
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="77dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/container_pic_date"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textHeader1"
+        <LinearLayout
+            android:id="@+id/container_scroll"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/header_th"
-            android:textAlignment="center"
-            android:textColor="@color/colorText"
-            android:textSize="22sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textHeader2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/header_en"
-            android:textAlignment="center"
-            android:textColor="@color/colorText"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textHeaderInfo2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="@string/paper_info"
-            android:textAlignment="center"
-            android:textColor="@color/colorText"
-            android:textSize="11sp" />
-
-    </LinearLayout>
-
-    <!--  รูป และ วันที่  -->
-    <LinearLayout
-        android:id="@+id/container_pic_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/container_header"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="15dp">
-
-        <!--  รูป  -->
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cardView"
-            android:layout_width="150dp"
-            android:layout_height="170dp"
-            android:layout_gravity="center"
-            >
+            android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_upload"
+                android:id="@+id/container_form"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
-                <ImageView
-                    android:id="@+id/upload_icon"
-                    android:layout_width="55dp"
-                    android:layout_height="55dp"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/outline_file_upload_24"
-                    android:contentDescription="@string/upload_th"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="@id/textUpload"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
-
-                <TextView
-                    android:id="@+id/textUpload"
-                    android:layout_width="wrap_content"
+                <!-- Header -->
+                <LinearLayout
+                    android:id="@+id/container_header"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/upload_icon"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    app:layout_constraintBottom_toTopOf="@+id/container_pic_date"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    android:text="@string/pic_th"/>
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <EditText
+                        android:id="@+id/editTextNo"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textSize="17sp"
+                        android:hint="@string/no_header"
+                        android:minHeight="48dp"
+                        android:autofillHints="postalCode"/>
+
+                </LinearLayout>
+
+                <!--  รูป และ วันที่  -->
+                <LinearLayout
+                    android:id="@+id/container_pic_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/container_header">
+
+                    <!--  รูป  -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardView"
+                        android:layout_width="150dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/container_upload"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/upload_icon"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:contentDescription="@string/upload_th"
+                                android:scaleType="fitCenter"
+                                app:layout_constraintBottom_toBottomOf="@id/textUpload"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/outline_file_upload_24" />
+
+                            <TextView
+                                android:id="@+id/textUpload"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pic_th"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/upload_icon" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!--  วันที่  -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textField"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/date">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <!--  วันที่  -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textField"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:hint="@string/date"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
