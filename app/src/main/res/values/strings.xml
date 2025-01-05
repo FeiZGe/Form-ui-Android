@@ -4,10 +4,46 @@
 
     <string name="no_header">เลขที่</string>
 
-    <string name="date">วันที่ Date</string>
     <string name="pic_th">รูปถ่าย</string>
     <string name="upload_th">อัพโหลดไฟล์ไอคอน</string>
 
-    <string name="work"></string>
+    <string name="work">ประเภทงานที่สมัคร</string>
+    <string name="work_salary">เงินเดือนที่ต้องการ</string>
+    <string name="work_salary_th">บาท</string>
+
+    <string name="f_name">ชื่อ</string>
+    <string name="l_name">นามสกุล</string>
+    <string name="name_en">ชื่อ - นามสกุล (ภาษาอังกฤษตัวพิมพ์ใหญ่)</string>">
+
+    <string name="passport">บัตรประจำตัวประชาชน/บัตรประจำตัวข้าราชการ</string>
+    <string name="passport_id">เลขบัตร</string>
+    <string name="passport_by">ออกให้โดย</string>
+    <string name="passport_dis">อำเภอ</string>
+    <string name="passport_city">เมือง</string>
+    <string name="passport_no">เลขที่</string>
+
+    <string name="birth">วัน / เดือน / ปีเกิด</string>
+    <string name="age">ปัจจุบันอายุ</string>
+    <string name="age_suffix">ปี</string>
+    
+    <string name="body_w">น้ำหนัก</string>
+    <string name="body_w_suffix">กก.</string>
+    <string name="body_h">ส่วนสูง</string>
+    <string name="body_h_suffix">ซม.</string>
+    
+    <string name="enr_1">เชื้อชาติ</string>
+    <string name="enr_2">สัญชาติ</string>
+    <string name="enr_3">ศาสนา</string>
+
+    <string name="address">ที่อยู่ตามสำมะโนครัว</string>
+    <string name="address_now">ที่อยู่ปัจจุบัน</string>
+    <string name="address_now_radio">ที่อยู่ปัจจุบันเป็น</string>
+    <string name="address_now_radio_1">ของตนเอง</string>
+    <string name="address_now_radio_2">ของบิดามารดา</string>
+    <string name="address_now_radio_3">อาศัยผู้อื่น</string>
+    <string name="address_now_radio_4">หอพัก</string>
+    <string name="address_now_radio_5">อื่นๆ ...........</string>
+
+    <string name="tel">โทรศัพท์</string>
 
 </resources>
