@@ -46,4 +46,7 @@
 
     <string name="tel">โทรศัพท์</string>
 
+    <string name="workplace">สถานที่ทำงานปัจจุบัน</string>
+    <string name="workplace_role">ตำแหน่ง</string>
+
 </resources>
