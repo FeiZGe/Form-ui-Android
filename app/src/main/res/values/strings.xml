@@ -55,5 +55,24 @@
     <string name="solider_3">ปลดประจำการเมื่อพ.ศ. ....</string>
     <string name="solider_4">ได้รับการยกเว้นเพราะ ....</string>
 
+    <string name="dad_name">ชื่อบิดา</string>
+    <string name="dad_work">สถานที่ทำงานขอบิดา</string>
+    <string name="mom_name">ชื่อมารดา</string>
+    <string name="mom_work">สถานที่ทำงานของมารดา</string>
+
+    <string name="family">สถานะครอบครัว</string>
+    <string name="family_1">โสด</string>
+    <string name="family_2">หมั้น</string>
+    <string name="family_3">สมรส</string>
+    <string name="family_4">หย่า</string>
+    <string name="family_5">หม้าย</string>
+    <string name="family_6">แยกกันอยู่</string>
+
+    <string name="marry">คู่สมรส/นามสกุล</string>
+    <string name="child">จำนวนบุตร</string>
+    <string name="child_suffix">คน</string>
+    <string name="child_1">คนที่ 1</string>
+    <string name="child_2">คนที่ 2</string>
+    <string name="child_3">คนที่ 3</string>
 
 </resources>

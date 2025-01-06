@@ -580,7 +580,7 @@
 
                             </com.google.android.material.textfield.TextInputLayout>
 
-                            <!-- สัญชาติ -->
+                            <!-- ศาสนา -->
                             <com.google.android.material.textfield.TextInputLayout
                                 android:id="@+id/textFieldReg"
                                 android:layout_width="0dp"
@@ -891,6 +891,454 @@
                         android:layout_marginBottom="10dp"
                         app:dividerThickness="2dp"/>
                     <!--  เส้นกั้น  -->
+
+                    <!--  Dad  -->
+                    <LinearLayout
+                        android:id="@+id/formDadName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/container_dad_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <!-- ชื่อจริง -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textFieldDadName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:hint="@string/dad_name"
+                                android:minWidth="170dp"
+                                android:layout_marginEnd="10dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/textFieldDadLName"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <!-- นามสกุล -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textFieldDadLName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:hint="@string/l_name"
+                                android:minWidth="170dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/textFieldDadName"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <!--  เชื้อชาติ สัญชาติ ศาสนา   -->
+                    <LinearLayout
+                        android:id="@+id/formDadENR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/container_dad_enr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <!-- เชื้อชาติ -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textFieldDadEci"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:hint="@string/enr_1"
+                                android:layout_marginEnd="10dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/textFieldDadNat"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <!-- สัญชาติ -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textFieldDadNat"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:hint="@string/enr_2"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/textFieldDadReg"
+                                app:layout_constraintStart_toEndOf="@+id/textFieldDadEci"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <!-- ศาสนา -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textFieldDadReg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="10dp"
+                                android:hint="@string/enr_3"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/textFieldDadNat"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <!-- สถานที่ทำงาน dad -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/container_dad_workplace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textFieldDadWorkPlace"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/dad_work"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!--  Workplace role tel   -->
+                    <LinearLayout
+                        android:id="@+id/formDadWRoleTel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/container_dad_wrt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <!-- Role -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textFieldDadRole"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:hint="@string/workplace_role"
+                                android:layout_marginEnd="10dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/textFieldDadWTel"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <!-- Tel -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textFieldDadWTel"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:hint="@string/tel"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/textFieldDadRole"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <!--  เส้นกั้น  -->
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        app:dividerThickness="2dp"/>
+                    <!--  เส้นกั้น  -->
+
+                    <!--  Mom  -->
+                    <LinearLayout
+                        android:id="@+id/formMomName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/container_mom_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <!-- ชื่อจริง -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textFieldMomName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:hint="@string/mom_name"
+                                android:minWidth="170dp"
+                                android:layout_marginEnd="10dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/textFieldMomLName"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <!-- นามสกุล -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textFieldMomLName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:hint="@string/l_name"
+                                android:minWidth="170dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/textFieldMomName"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <!--  เชื้อชาติ สัญชาติ ศาสนา   -->
+                    <LinearLayout
+                        android:id="@+id/formMomENR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/container_mom_enr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <!-- เชื้อชาติ -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textFieldMomEci"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:hint="@string/enr_1"
+                                android:layout_marginEnd="10dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/textFieldMomNat"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <!-- สัญชาติ -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textFieldMomNat"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:hint="@string/enr_2"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/textFieldMomReg"
+                                app:layout_constraintStart_toEndOf="@+id/textFieldMomEci"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <!-- ศาสนา -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textFieldMomReg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="10dp"
+                                android:hint="@string/enr_3"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/textFieldMomNat"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <!-- สถานที่ทำงาน dad -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/container_mom_workplace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textFieldMomWorkPlace"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/mom_work"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!--  Workplace role tel   -->
+                    <LinearLayout
+                        android:id="@+id/formMomWRoleTel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/container_mom_wrt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <!-- Role -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textFieldMomRole"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:hint="@string/workplace_role"
+                                android:layout_marginEnd="10dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/textFieldMomWTel"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <!-- Tel -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textFieldMomWTel"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:hint="@string/tel"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/textFieldMomRole"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <!--  เส้นกั้น  -->
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        app:dividerThickness="2dp"/>
+                    <!--  เส้นกั้น  -->
+
+                    <!--  family status  -->
+
+                    <!--  Marry  -->
 
                 </LinearLayout>
 
