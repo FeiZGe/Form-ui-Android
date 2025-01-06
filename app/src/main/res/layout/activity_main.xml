@@ -835,7 +835,62 @@
                         app:dividerThickness="2dp"/>
                     <!--  เส้นกั้น  -->
 
+                    <!--  ทหาร  -->
+                    <LinearLayout
+                        android:id="@+id/container_solider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="15dp">
 
+                        <TextView
+                            android:id="@+id/soliderTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/solider"
+                            android:textStyle="bold"
+                            android:textSize="16sp"/>
+
+                        <RadioGroup
+                            android:checkedButton="@+id/solider_selected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RadioButton
+                                android:id="@+id/solider_selected"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:enabled="true"
+                                android:text="@string/solider_1"/>
+                            <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="false"
+                                android:enabled="true"
+                                android:text="@string/solider_2"/>
+                            <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="false"
+                                android:enabled="true"
+                                android:text="@string/solider_3"/>
+                            <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:checked="false"
+                                android:enabled="true"
+                                android:text="@string/solider_4"/>
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!--  เส้นกั้น  -->
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        app:dividerThickness="2dp"/>
+                    <!--  เส้นกั้น  -->
 
                 </LinearLayout>
 

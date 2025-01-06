@@ -49,4 +49,11 @@
     <string name="workplace">สถานที่ทำงานปัจจุบัน</string>
     <string name="workplace_role">ตำแหน่ง</string>
 
+    <string name="solider">สถานภาพทางทหาร</string>
+    <string name="solider_1">เรียนสำเร็จวิชารักษาดินแดนปีที่ ....</string>
+    <string name="solider_2">จับได้ใบดำ</string>
+    <string name="solider_3">ปลดประจำการเมื่อพ.ศ. ....</string>
+    <string name="solider_4">ได้รับการยกเว้นเพราะ ....</string>
+
+
 </resources>
