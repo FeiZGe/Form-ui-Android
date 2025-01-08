@@ -70,8 +70,8 @@
                     <!--  รูป  -->
                     <com.google.android.material.card.MaterialCardView
                         android:id="@+id/cardView"
-                        android:layout_width="150dp"
-                        android:layout_height="170dp"
+                        android:layout_width="180dp"
+                        android:layout_height="200dp"
                         android:layout_gravity="center">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -81,8 +81,8 @@
 
                             <ImageView
                                 android:id="@+id/upload_icon"
-                                android:layout_width="55dp"
-                                android:layout_height="55dp"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
                                 android:contentDescription="@string/upload_th"
                                 android:scaleType="fitCenter"
                                 app:layout_constraintBottom_toBottomOf="@id/textUpload"
@@ -96,6 +96,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/pic_th"
+                                android:textSize="18sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
