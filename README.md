@@ -2,7 +2,9 @@
 This project is part of an Android development coursework focusing on designing and implementing form-based user interfaces. 
 It leverages **Material 3** to create a modern and responsive UI.
 
-![design]()
+<div align="center">
+   <img src="https://github.com/FeiZGe/Form-ui-Android/blob/main/app/src/main/res/drawable/formui.gif" alt="Demo deisgn" width="300">
+</div>
 
 ## Features ☀️
 - **Material Design 3**: Utilizes the latest Material Design components.
